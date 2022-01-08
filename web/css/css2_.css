@@ -1,0 +1,196 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19/11/2019, 22:35:56
+    Author     : Administrador
+*/
+
+/* The side navigation menu */
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 210px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  background: -webkit-linear-gradient(top, #fcfffa, #568c2e);
+  background: -o-linear-gradient(top, #81D742, #FFF);
+  background: -moz-linear-gradient(top, #81D742, #528c27);
+  background: linear-gradient(top, #81D742, #528c27);
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 80px 8px 10px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: greenyellow;
+}
+
+/* Main content */
+.main {
+  
+  margin-left: 210px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+.fundo{
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;  
+}
+
+.container-fundo::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255,0.9);
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: blue;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 300px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.navbar {
+  width: 100%;
+  align-items: center;
+  background-color: #111;
+  
+  
+}
+
+.banner{
+    width: 100%; 
+    height: 100px;
+    text-align: center;
+}
+
+
+.box {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+.box * {
+    vertical-align: middle;
+}
+
+
+
+.box span {
+    display: inline-block;
+    height: 100%;
+}
+
+
+
+.table{
+    text-align: center;
+    border-width: 4px;
+    border-radius: 5px;
+    border-color: black;
+    text-decoration: black ;
+    color: blue;
+
+}
+.table th{
+    color: black;
+    text-align: center;
+    
+}
+.table tr{
+    color:black;
+
+    
+}
+.produto{
+    width: 200px;
+    height: 200px;
+}
+#divC{
+    align-items: center;
+    text-align: center;
+    float: left;
+    position: static;
+    margin: 20px;
+
+}
+.bannermenu{
+    text-align: right;
+}
+
+#pz{
+    text-align: right;
+}
+
+.banner2{
+    width: 1%;
+    height: 10px;
+}
+.embalagem{
+    margin: 20px;
+    display: inline-table;
+}
